@@ -1,0 +1,13 @@
+{
+  "streams": [
+    {
+      "function (action) {\n        if (typeof action ": "== 'function') {\n          return action(dispatch, getState, extraArgument);\n        }\n\n        return next(action);\n      }",
+      "id": 1
+    },
+    {
+      "title": "sadfsda",
+      "description": "asdfasd",
+      "id": 2
+    }
+  ]
+}

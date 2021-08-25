@@ -8,6 +8,7 @@ class StreamList extends React.Component {
     componentDidMount(stream) {
         this.props.fetchStreams();
     }
+    
     renderAdmin(stream){
         if(stream.userId===this.props.currentUserId){
             return (
@@ -31,7 +32,9 @@ class StreamList extends React.Component {
 
                         <i className="large middle aligned icon camera" />
                         <div className="content">
-                            {stream.title}
+                            <Link to={`/streams/${stream.id}`} >
+                                {stream.title}
+                            </Link>
                         </div>
                         <div className="description">{stream.description}</div>
                     </div>
